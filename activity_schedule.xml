@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Schedule" >
+
+    <LinearLayout
+        android:id="@+id/Week1Schedule"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="8"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/week1ScheduleDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:id="@+id/week1SundaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day1Name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek1Sunday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week1SundayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week1MondaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day2Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek1Monday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week1MondayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week1TuesdaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day3Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek1Tuesday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week1TuesdayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week1WednesdaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day4Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek1Wednesday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week1WednesdayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week1ThursdaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day5Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek1Thursday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week1ThursdayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week1FridaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day6Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek1Friday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week1FridayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week1SaturdaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day7Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek1Saturday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week1SaturdayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/nextWeekButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="next" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Week2Schedule"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="8"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/week2ScheduleDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:id="@+id/week2SundaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day8Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek2Sunday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week2SundayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week2MondaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day9Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek2Monday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week2MondayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week2TuesdaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day10Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek2Tuesday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week2TuesdayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week2WednesdaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day11Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek2Wednesday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week2WednesdayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week2ThursdaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day12Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek2Thursday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week2ThursdayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week2FridaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day13Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek2Friday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week2FridayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week2SaturdaySchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/schedule_background">
+
+                <TextView
+                    android:id="@+id/day14Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/editWeek2Saturday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="invisible"/>
+
+                <ListView
+                    android:id="@+id/week2SaturdayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/lastWeekButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="previous" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
